@@ -35,7 +35,7 @@ AKeyTimmerFlag := 0
 ;-- 按键1 开启较慢定时吞噬，同时可以看情况自己按A来吞噬
 *1::
 if AKeyTimmerFlag:=!AKeyTimmerFlag	
-	SetTimer,OnAKeyTimmerHandler,2000
+	SetTimer,OnAKeyTimmerHandler,1000
 else
 	SetTimer,OnAKeyTimmerHandler,Off
 Return 
